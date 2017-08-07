@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="KGk-i7-Jjw" customClass="BAProfileMyCell">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="427" height="84.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="accoutBimage" translatesAutoresizingMaskIntoConstraints="NO" id="hA6-Xw-OyL">
+                        <rect key="frame" x="0.0" y="0.0" width="427" height="84.5"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gift" translatesAutoresizingMaskIntoConstraints="NO" id="5uv-LW-s7Q">
+                        <rect key="frame" x="40" y="11.5" width="55" height="62"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QR0-Gl-CYH">
+                        <rect key="frame" x="345" y="9.5" width="52" height="66"/>
+                        <state key="normal" image="postman"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VCk-GT-wbR">
+                        <rect key="frame" x="122" y="80.5" width="240" height="128"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="accoutBimage" translatesAutoresizingMaskIntoConstraints="NO" id="yLy-5r-aB5">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="您还没有[免费邮寄卷]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWb-hw-dXO">
+                                <rect key="frame" x="67" y="30" width="107" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[免费邮寄卷]可以让你拥有一次将" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Je4-oh-u3S">
+                                <rect key="frame" x="67" y="45" width="107" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="抓到的娃娃免费邮寄到家里的机会哦~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sf-69-V8J">
+                                <rect key="frame" x="67" y="64" width="107" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="开启宝箱有机会获得[免费邮寄卷]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlg-24-ea0">
+                                <rect key="frame" x="67" y="77" width="107" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="每日充值宝箱必得一张哦~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBL-tV-AUE">
+                                <rect key="frame" x="67" y="88" width="107" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="快去充值领取吧~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDA-ee-HIw">
+                                <rect key="frame" x="67" y="101" width="107" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yLy-5r-aB5" secondAttribute="trailing" id="9mO-fE-42a"/>
+                            <constraint firstItem="yLy-5r-aB5" firstAttribute="top" secondItem="VCk-GT-wbR" secondAttribute="top" id="BPV-Aa-GDu"/>
+                            <constraint firstItem="yLy-5r-aB5" firstAttribute="leading" secondItem="VCk-GT-wbR" secondAttribute="leading" id="GUf-qc-Q78"/>
+                            <constraint firstAttribute="width" constant="240" id="hiR-DG-OYp"/>
+                            <constraint firstAttribute="bottom" secondItem="yLy-5r-aB5" secondAttribute="bottom" id="ric-nb-9zf"/>
+                            <constraint firstAttribute="height" constant="128" id="xRV-52-nnB"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的奖品" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojq-UW-GHc">
+                        <rect key="frame" x="165" y="28" width="97.5" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ojq-UW-GHc" firstAttribute="centerX" secondItem="hA6-Xw-OyL" secondAttribute="centerX" id="6vm-BG-6pi"/>
+                    <constraint firstAttribute="trailing" secondItem="QR0-Gl-CYH" secondAttribute="trailing" constant="30" id="DPg-wx-1zK"/>
+                    <constraint firstItem="QR0-Gl-CYH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Hg0-ty-2vG"/>
+                    <constraint firstItem="ojq-UW-GHc" firstAttribute="centerY" secondItem="5uv-LW-s7Q" secondAttribute="centerY" id="I90-bH-Ne5"/>
+                    <constraint firstAttribute="bottom" secondItem="hA6-Xw-OyL" secondAttribute="bottom" id="Nnn-cR-RNL"/>
+                    <constraint firstAttribute="trailing" secondItem="hA6-Xw-OyL" secondAttribute="trailing" id="R4n-cX-0w2"/>
+                    <constraint firstItem="VCk-GT-wbR" firstAttribute="top" secondItem="QR0-Gl-CYH" secondAttribute="bottom" constant="5" id="dFd-FU-b1w"/>
+                    <constraint firstItem="hA6-Xw-OyL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gIx-0c-M3R"/>
+                    <constraint firstItem="5uv-LW-s7Q" firstAttribute="centerY" secondItem="hA6-Xw-OyL" secondAttribute="centerY" id="kpC-H7-Gvv"/>
+                    <constraint firstAttribute="trailing" secondItem="VCk-GT-wbR" secondAttribute="trailing" constant="65" id="n8Q-Tj-J7N"/>
+                    <constraint firstItem="5uv-LW-s7Q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="vzq-2X-mxy"/>
+                    <constraint firstItem="hA6-Xw-OyL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="whD-wd-qbS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailBtn" destination="QR0-Gl-CYH" id="AkU-dM-Qdr"/>
+                <outlet property="detailView" destination="VCk-GT-wbR" id="jAL-dA-2t2"/>
+                <outlet property="myImage" destination="5uv-LW-s7Q" id="n3Z-nO-z4s"/>
+                <outlet property="myTitle" destination="ojq-UW-GHc" id="ggo-TE-UaQ"/>
+            </connections>
+            <point key="canvasLocation" x="132.5" y="66.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="accoutBimage" width="321" height="86"/>
+        <image name="gift" width="55" height="62"/>
+        <image name="postman" width="52" height="66"/>
+    </resources>
+</document>

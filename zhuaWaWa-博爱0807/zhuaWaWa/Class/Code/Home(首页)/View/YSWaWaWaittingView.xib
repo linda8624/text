@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="loX-zY-Xkx" customClass="YSWaWaWaittingView">
+            <rect key="frame" x="0.0" y="0.0" width="423" height="140"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beijngBig" translatesAutoresizingMaskIntoConstraints="NO" id="lDU-dt-pjR">
+                    <rect key="frame" x="0.0" y="0.0" width="423" height="140"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STT-2e-bOZ">
+                    <rect key="frame" x="101.5" y="60" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="8iQ-0k-MKJ"/>
+                        <constraint firstAttribute="width" constant="60" id="pPj-q4-Y07"/>
+                    </constraints>
+                    <state key="normal" image="showJiangpinH"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9d-8g-loz">
+                    <rect key="frame" x="181.5" y="60" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Bt7-yj-EFe"/>
+                        <constraint firstAttribute="height" constant="60" id="EYW-G4-umY"/>
+                    </constraints>
+                    <state key="normal" image="switchA1"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPm-aG-PsY">
+                    <rect key="frame" x="261.5" y="60" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="3M2-qz-Hob"/>
+                        <constraint firstAttribute="width" constant="60" id="QBu-Cp-op4"/>
+                    </constraints>
+                    <state key="normal" image="guanzhuS"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIj-RT-jR3">
+                    <rect key="frame" x="121" y="16" width="181" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="7Nl-T8-zq0"/>
+                        <constraint firstAttribute="width" constant="181" id="c9W-EU-hb8"/>
+                    </constraints>
+                    <state key="normal" title="我也要玩" backgroundImage="buttonDis"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lDU-dt-pjR" firstAttribute="leading" secondItem="loX-zY-Xkx" secondAttribute="leading" id="6j3-Jb-2dj"/>
+                <constraint firstItem="MIj-RT-jR3" firstAttribute="top" secondItem="loX-zY-Xkx" secondAttribute="top" constant="16" id="8ce-V6-8rR"/>
+                <constraint firstItem="b9d-8g-loz" firstAttribute="leading" secondItem="STT-2e-bOZ" secondAttribute="trailing" constant="20" id="9kr-lQ-2O6"/>
+                <constraint firstAttribute="bottom" secondItem="lDU-dt-pjR" secondAttribute="bottom" id="AHI-2O-83b"/>
+                <constraint firstItem="JPm-aG-PsY" firstAttribute="leading" secondItem="b9d-8g-loz" secondAttribute="trailing" constant="20" id="CU8-Jy-RRt"/>
+                <constraint firstAttribute="trailing" secondItem="lDU-dt-pjR" secondAttribute="trailing" id="Dtk-cI-7iS"/>
+                <constraint firstItem="b9d-8g-loz" firstAttribute="centerX" secondItem="MIj-RT-jR3" secondAttribute="centerX" id="EVj-o8-1V7"/>
+                <constraint firstItem="STT-2e-bOZ" firstAttribute="centerY" secondItem="b9d-8g-loz" secondAttribute="centerY" id="Obu-ZF-L9x"/>
+                <constraint firstItem="b9d-8g-loz" firstAttribute="top" secondItem="MIj-RT-jR3" secondAttribute="bottom" constant="8" id="OhE-BO-HsT"/>
+                <constraint firstItem="MIj-RT-jR3" firstAttribute="centerX" secondItem="lDU-dt-pjR" secondAttribute="centerX" id="beA-kk-rH8"/>
+                <constraint firstItem="JPm-aG-PsY" firstAttribute="centerY" secondItem="b9d-8g-loz" secondAttribute="centerY" id="c8r-qi-2Ra"/>
+                <constraint firstItem="lDU-dt-pjR" firstAttribute="top" secondItem="loX-zY-Xkx" secondAttribute="top" id="cTZ-8s-IRc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnWaitingStatus" destination="MIj-RT-jR3" id="jaH-sL-nwV"/>
+                <outlet property="giftButton" destination="STT-2e-bOZ" id="Lcz-Jl-fL4"/>
+                <outlet property="loveButton" destination="JPm-aG-PsY" id="g6Q-h7-Nds"/>
+                <outlet property="playButton" destination="b9d-8g-loz" id="RYY-L0-PFU"/>
+            </connections>
+            <point key="canvasLocation" x="96.5" y="-107"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="beijngBig" width="360" height="131"/>
+        <image name="buttonDis" width="184" height="57"/>
+        <image name="guanzhuS" width="71" height="47"/>
+        <image name="showJiangpinH" width="71" height="47"/>
+        <image name="switchA1" width="71" height="47"/>
+    </resources>
+</document>

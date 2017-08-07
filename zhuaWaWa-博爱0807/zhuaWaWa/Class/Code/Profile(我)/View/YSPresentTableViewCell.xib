@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="167" id="KGk-i7-Jjw" customClass="YSPresentTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="271" height="47"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="271" height="46.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="accout" translatesAutoresizingMaskIntoConstraints="NO" id="ZGY-pu-OjE">
+                        <rect key="frame" x="20" y="-7" width="60" height="60.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="3Cr-AY-hn1"/>
+                            <constraint firstAttribute="width" constant="60" id="uTc-iL-84a"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一只可爱的桃子" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wm3-13-hCt">
+                        <rect key="frame" x="223" y="-7" width="72" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="奖品1:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMg-Oa-vZl">
+                        <rect key="frame" x="174" y="-7" width="39" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EjY-Gh-eWR">
+                        <rect key="frame" x="174" y="21.5" width="77" height="32"/>
+                        <state key="normal" title="分享给朋友" backgroundImage="allImage">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="shareButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="htY-8O-S3d"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.97804766889999994" green="0.90950661899999996" blue="0.9129574895" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="ZGY-pu-OjE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Dtc-kd-dzI"/>
+                    <constraint firstItem="hMg-Oa-vZl" firstAttribute="top" secondItem="ZGY-pu-OjE" secondAttribute="top" id="F7y-b4-aHA"/>
+                    <constraint firstItem="wm3-13-hCt" firstAttribute="leading" secondItem="hMg-Oa-vZl" secondAttribute="trailing" constant="10" id="M6Q-g1-RFg"/>
+                    <constraint firstAttribute="trailing" secondItem="EjY-Gh-eWR" secondAttribute="trailing" constant="20" id="SRX-Df-W49"/>
+                    <constraint firstItem="ZGY-pu-OjE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Zpv-os-h3s"/>
+                    <constraint firstItem="wm3-13-hCt" firstAttribute="centerY" secondItem="hMg-Oa-vZl" secondAttribute="centerY" id="b6G-ot-5Gl"/>
+                    <constraint firstItem="hMg-Oa-vZl" firstAttribute="leading" secondItem="EjY-Gh-eWR" secondAttribute="leading" id="ecV-EW-lsl"/>
+                    <constraint firstItem="wm3-13-hCt" firstAttribute="top" secondItem="hMg-Oa-vZl" secondAttribute="top" id="hQz-fv-oCR"/>
+                    <constraint firstItem="EjY-Gh-eWR" firstAttribute="bottom" secondItem="ZGY-pu-OjE" secondAttribute="bottom" id="k73-bL-X6G"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="giteType" destination="hMg-Oa-vZl" id="VB1-X6-HFr"/>
+                <outlet property="myImageView" destination="ZGY-pu-OjE" id="w4A-gP-rz0"/>
+                <outlet property="shareButton" destination="EjY-Gh-eWR" id="7wT-Uu-JRw"/>
+                <outlet property="title" destination="wm3-13-hCt" id="Bq6-xb-oHr"/>
+            </connections>
+            <point key="canvasLocation" x="189.5" y="127.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="accout" width="24" height="26"/>
+        <image name="allImage" width="67" height="32"/>
+    </resources>
+</document>

@@ -1,0 +1,76 @@
+//
+//  ZhuaWawaHeader.pch
+//  zhuaWaWa
+//
+//  Created by boai on 2017/7/28.
+//  Copyright © 2017年 boai. All rights reserved.
+//
+
+#ifndef ZhuaWawaHeader_pch
+#define ZhuaWawaHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* ZhuaWawaHeader_pch */
+
+
+#ifdef __OBJC__
+
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+
+    #import "BAKit.h"
+    //    #import "BAUIHelper.h"
+
+
+    #import "YYImage.h"
+    #import "YYWebImage.h"
+    #import "YYCache.h"
+    #import "YYCategories.h"
+    #import <YYModel.h>
+
+    #import <BAAlert_OC.h>
+    #import <BAButton.h>
+    #import "BAKit_HudManager.h"
+    #import "PLPlayer.h"
+    #import "YSAccountTool.h"
+    #import "BAUserModel.h"
+
+    #import "NSObject+BAMJParse.h"
+    /*! 系统类 */
+    #import "BALog.h"
+    #import "BAApp.h"
+
+    /*! 全局宏定义文件 */
+    #import "zhuaWaWaDefin.h"
+    #import "zhuaWaWaFrameHeader.h"
+    /*! 缓存三方库 */
+    #import "UIImageView+WebCache.h"
+    #import "SDImageCache.h"
+    #import "HappyDNS.h"
+    #import "zhuaWaWaUrl.h"
+
+
+    #import "UIView+SDAutoLayout.h"
+    #import "UITableView+SDAutoTableViewCellHeight.h"
+    #import "BALocalNotification.h"
+    #import "BAKit.h"
+    #import "BANewsNetManager.h"
+
+
+    #import "BAShareManage.h"
+
+    #import "YSNavTabBarMeun.h"
+
+    //微信支付
+    #import "WXApi.h"
+    #import "WXApiObject.h"
+    #import "payRequsestHandler.h"
+    //支付宝支付
+    #import <AlipaySDK/AlipaySDK.h>
+    #import "Order.h"
+    #import "DataSigner.h"
+
+#endif

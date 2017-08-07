@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="4C5-Ic-BCB" customClass="YSBaJiView">
+            <rect key="frame" x="0.0" y="0.0" width="476" height="657"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="floatingLayer" translatesAutoresizingMaskIntoConstraints="NO" id="mHm-Qj-1Kb">
+                    <rect key="frame" x="0.0" y="0.0" width="476" height="657"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baji" translatesAutoresizingMaskIntoConstraints="NO" id="Uqo-39-5Cw">
+                    <rect key="frame" x="58" y="72" width="360" height="512"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="512" id="0ak-NN-3Kk"/>
+                        <constraint firstAttribute="width" constant="360" id="D7D-Pb-Ngx"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAY-ra-S49">
+                    <rect key="frame" x="398" y="24" width="38" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="DWF-wu-r5a"/>
+                        <constraint firstAttribute="width" constant="38" id="hqU-LE-bym"/>
+                    </constraints>
+                    <state key="normal" image="closeBtn"/>
+                    <connections>
+                        <action selector="closeButtonClick:" destination="4C5-Ic-BCB" eventType="touchUpInside" id="W1w-We-jsr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUz-YF-pzc">
+                    <rect key="frame" x="211" y="136" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="45"/>
+                    <state key="normal" title="5">
+                        <color key="titleColor" red="0.99441396820000005" green="1" blue="0.96027826049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4R-bd-Xh7">
+                    <rect key="frame" x="140" y="387" width="196" height="62"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="196" id="X1o-oX-O5p"/>
+                        <constraint firstAttribute="height" constant="62" id="ard-El-Cd8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="我要霸机" backgroundImage="bajiButton">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="bajiButtonClcik:" destination="4C5-Ic-BCB" eventType="touchUpInside" id="Kzh-Zd-XPP"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击上方霸机按钮继续游戏" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yc6-Uo-ljZ">
+                    <rect key="frame" x="115.5" y="459" width="245" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="霸机游戏将扣除6000G币" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFm-c8-sGL">
+                    <rect key="frame" x="124.5" y="493" width="227.5" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Yc6-Uo-ljZ" firstAttribute="top" secondItem="Z4R-bd-Xh7" secondAttribute="bottom" constant="10" id="1Mg-T4-339"/>
+                <constraint firstItem="BAY-ra-S49" firstAttribute="top" secondItem="4C5-Ic-BCB" secondAttribute="top" constant="24" id="1UA-KS-m2p"/>
+                <constraint firstItem="RFm-c8-sGL" firstAttribute="top" secondItem="Yc6-Uo-ljZ" secondAttribute="bottom" constant="10" id="1vs-rs-YDz"/>
+                <constraint firstAttribute="bottom" secondItem="mHm-Qj-1Kb" secondAttribute="bottom" id="65Q-0S-3rC"/>
+                <constraint firstItem="Yc6-Uo-ljZ" firstAttribute="centerX" secondItem="Z4R-bd-Xh7" secondAttribute="centerX" id="6iX-71-Wl0"/>
+                <constraint firstAttribute="trailing" secondItem="mHm-Qj-1Kb" secondAttribute="trailing" id="CAp-yE-H4I"/>
+                <constraint firstItem="RFm-c8-sGL" firstAttribute="centerX" secondItem="Yc6-Uo-ljZ" secondAttribute="centerX" id="FfN-PG-g2O"/>
+                <constraint firstItem="mHm-Qj-1Kb" firstAttribute="leading" secondItem="4C5-Ic-BCB" secondAttribute="leading" id="FpL-c2-Wvu"/>
+                <constraint firstItem="Uqo-39-5Cw" firstAttribute="centerX" secondItem="mHm-Qj-1Kb" secondAttribute="centerX" id="KD7-Iu-8KP"/>
+                <constraint firstItem="mHm-Qj-1Kb" firstAttribute="top" secondItem="4C5-Ic-BCB" secondAttribute="top" id="L0W-3r-BDr"/>
+                <constraint firstAttribute="trailing" secondItem="BAY-ra-S49" secondAttribute="trailing" constant="40" id="YPt-LT-AN4"/>
+                <constraint firstItem="Uqo-39-5Cw" firstAttribute="centerY" secondItem="mHm-Qj-1Kb" secondAttribute="centerY" id="lHz-cG-Zd4"/>
+                <constraint firstAttribute="bottom" secondItem="Z4R-bd-Xh7" secondAttribute="bottom" constant="208" id="ofq-tZ-2XK"/>
+                <constraint firstItem="Z4R-bd-Xh7" firstAttribute="centerX" secondItem="Uqo-39-5Cw" secondAttribute="centerX" id="q3l-Np-XGu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bajiButton" destination="Z4R-bd-Xh7" id="6yB-jH-YDY"/>
+                <outlet property="deleteButton" destination="BAY-ra-S49" id="dbR-Tw-DBa"/>
+                <outlet property="gameMoney" destination="RFm-c8-sGL" id="tH3-Gu-FUh"/>
+                <outlet property="timeButton" destination="NUz-YF-pzc" id="KJh-iV-Azt"/>
+            </connections>
+            <point key="canvasLocation" x="112" y="-84.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="baji" width="360" height="512"/>
+        <image name="bajiButton" width="196" height="62"/>
+        <image name="closeBtn" width="22" height="22"/>
+        <image name="floatingLayer" width="320" height="568"/>
+    </resources>
+</document>

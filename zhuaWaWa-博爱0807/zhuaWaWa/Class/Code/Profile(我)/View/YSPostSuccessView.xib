@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ItL-RE-yzG" customClass="YSPostSuccessView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellowBjW" translatesAutoresizingMaskIntoConstraints="NO" id="J89-lW-GHP">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="奖品邮寄成功" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7i-o9-a0a">
+                    <rect key="frame" x="182.5" y="24" width="86" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请耐心等待" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YwM-hV-Rgo">
+                    <rect key="frame" x="194.5" y="41.5" width="61.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="获得奖品邮寄的最新动态" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2W-a2-kyV">
+                    <rect key="frame" x="160" y="78" width="130" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="uJ7-oX-qVe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ax-Sv-OPa">
+                    <rect key="frame" x="175" y="100" width="115" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Anx-G0-WjM"/>
+                        <constraint firstAttribute="width" constant="115" id="nSh-Qk-9sd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="关注公众号" backgroundImage="redBtn1">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="guanzhuBtnClick:" destination="ItL-RE-yzG" eventType="touchUpInside" id="GX2-fk-LCM"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关注我们的公众号可以" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxp-5s-ljS">
+                    <rect key="frame" x="160" y="66" width="130" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="J89-lW-GHP" firstAttribute="leading" secondItem="ItL-RE-yzG" secondAttribute="leading" id="EfX-iO-E9Z"/>
+                <constraint firstItem="YwM-hV-Rgo" firstAttribute="centerX" secondItem="Yxp-5s-ljS" secondAttribute="centerX" id="Huj-lp-59F"/>
+                <constraint firstItem="Yxp-5s-ljS" firstAttribute="top" secondItem="YwM-hV-Rgo" secondAttribute="bottom" constant="10" id="T5Q-mV-sVS"/>
+                <constraint firstItem="U2W-a2-kyV" firstAttribute="top" secondItem="Yxp-5s-ljS" secondAttribute="bottom" id="UFK-Kx-oc1"/>
+                <constraint firstItem="J89-lW-GHP" firstAttribute="top" secondItem="ItL-RE-yzG" secondAttribute="top" id="VCv-6M-pkN"/>
+                <constraint firstItem="Yxp-5s-ljS" firstAttribute="width" secondItem="U2W-a2-kyV" secondAttribute="width" id="Vua-Kw-qoI"/>
+                <constraint firstItem="YwM-hV-Rgo" firstAttribute="top" secondItem="V7i-o9-a0a" secondAttribute="bottom" id="Web-gW-BPq"/>
+                <constraint firstItem="V7i-o9-a0a" firstAttribute="centerX" secondItem="YwM-hV-Rgo" secondAttribute="centerX" id="ZnF-hS-dPH"/>
+                <constraint firstAttribute="bottom" secondItem="2ax-Sv-OPa" secondAttribute="bottom" constant="25" id="cM9-mE-gkL"/>
+                <constraint firstAttribute="trailing" secondItem="J89-lW-GHP" secondAttribute="trailing" id="jNs-VE-kHY"/>
+                <constraint firstItem="U2W-a2-kyV" firstAttribute="trailing" secondItem="2ax-Sv-OPa" secondAttribute="trailing" id="juF-R9-c4p"/>
+                <constraint firstItem="Yxp-5s-ljS" firstAttribute="trailing" secondItem="U2W-a2-kyV" secondAttribute="trailing" id="nsR-vd-Cfs"/>
+                <constraint firstAttribute="trailing" secondItem="2ax-Sv-OPa" secondAttribute="trailing" constant="30" id="qPx-i2-9mn"/>
+                <constraint firstAttribute="bottom" secondItem="J89-lW-GHP" secondAttribute="bottom" id="vPq-fV-GS0"/>
+                <constraint firstItem="2ax-Sv-OPa" firstAttribute="top" secondItem="U2W-a2-kyV" secondAttribute="bottom" constant="10" id="ySs-J5-mPo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-28" y="-310"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="redBtn1" width="113" height="25"/>
+        <image name="yellowBjW" width="321" height="146"/>
+    </resources>
+</document>

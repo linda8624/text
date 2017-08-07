@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YSPostPresentViewController">
+            <connections>
+                <outlet property="myTableView" destination="SgG-kt-ApN" id="8JR-Oi-yMp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SgG-kt-ApN">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="607"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sEh-55-V01">
+                    <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28R-Rx-YbU">
+                            <rect key="frame" x="49.5" y="17.5" width="113" height="25"/>
+                            <state key="normal" title="增加新的地址" backgroundImage="greenBtn">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="addNewAddress:" destination="-1" eventType="touchUpInside" id="T8u-VR-2gZ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5PO-G3-pts">
+                            <rect key="frame" x="212.5" y="17.5" width="113" height="25"/>
+                            <state key="normal" title="邮寄到该地址" backgroundImage="redBtn1">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="postPresentClick:" destination="-1" eventType="touchUpInside" id="thh-Gg-xcn"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2B8-6l-wS4">
+                            <rect key="frame" x="172.5" y="15" width="30" height="30"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97804766889999994" green="0.90950661899999996" blue="0.9129574895" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="5PO-G3-pts" firstAttribute="width" secondItem="28R-Rx-YbU" secondAttribute="width" id="5tk-5w-Axb"/>
+                        <constraint firstItem="5PO-G3-pts" firstAttribute="centerY" secondItem="28R-Rx-YbU" secondAttribute="centerY" id="GG5-dc-Th7"/>
+                        <constraint firstItem="2B8-6l-wS4" firstAttribute="leading" secondItem="28R-Rx-YbU" secondAttribute="trailing" constant="10" id="IJr-Cv-3Yb"/>
+                        <constraint firstItem="2B8-6l-wS4" firstAttribute="centerX" secondItem="sEh-55-V01" secondAttribute="centerX" id="W0W-va-8ia"/>
+                        <constraint firstItem="5PO-G3-pts" firstAttribute="leading" secondItem="2B8-6l-wS4" secondAttribute="trailing" constant="10" id="Yt6-9k-WMr"/>
+                        <constraint firstItem="5PO-G3-pts" firstAttribute="centerY" secondItem="2B8-6l-wS4" secondAttribute="centerY" id="bGA-80-MBO"/>
+                        <constraint firstItem="2B8-6l-wS4" firstAttribute="centerY" secondItem="sEh-55-V01" secondAttribute="centerY" id="s5R-yx-NYK"/>
+                        <constraint firstItem="5PO-G3-pts" firstAttribute="height" secondItem="28R-Rx-YbU" secondAttribute="height" id="vHs-pQ-D4H"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sEh-55-V01" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4lU-wk-yEb"/>
+                <constraint firstAttribute="bottom" secondItem="SgG-kt-ApN" secondAttribute="bottom" constant="60" id="AjY-OE-Dzq"/>
+                <constraint firstAttribute="bottom" secondItem="sEh-55-V01" secondAttribute="bottom" id="LKj-po-Riy"/>
+                <constraint firstItem="SgG-kt-ApN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="OCh-32-bcM"/>
+                <constraint firstItem="SgG-kt-ApN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SYo-Sw-N7i"/>
+                <constraint firstAttribute="trailing" secondItem="SgG-kt-ApN" secondAttribute="trailing" id="Uen-pu-tNY"/>
+                <constraint firstItem="sEh-55-V01" firstAttribute="top" secondItem="SgG-kt-ApN" secondAttribute="bottom" id="hlK-bf-aAO"/>
+                <constraint firstAttribute="trailing" secondItem="sEh-55-V01" secondAttribute="trailing" id="n82-ms-Zcl"/>
+            </constraints>
+            <point key="canvasLocation" x="37.5" y="73.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="greenBtn" width="113" height="25"/>
+        <image name="redBtn1" width="113" height="25"/>
+    </resources>
+</document>

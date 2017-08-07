@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="OVY-wd-gZv" customClass="YSGameFaildView">
+            <rect key="frame" x="0.0" y="0.0" width="476" height="657"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="floatingLayer" translatesAutoresizingMaskIntoConstraints="NO" id="Fsy-sC-VIP">
+                    <rect key="frame" x="0.0" y="0.0" width="476" height="657"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="failImage" translatesAutoresizingMaskIntoConstraints="NO" id="hB8-iG-rnh">
+                    <rect key="frame" x="106" y="60" width="264" height="272"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="264" id="Kmm-p4-bHn"/>
+                        <constraint firstAttribute="height" constant="272" id="Pao-Sd-aVw"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的任务里有&quot;宝箱任务&quot;可以完成" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpP-3f-p80">
+                    <rect key="frame" x="162" y="351" width="152.5" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开宝箱也可以赚取G币哦" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgb-a8-G7S">
+                    <rect key="frame" x="183.5" y="365" width="110" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="真的差一点点就抓到了" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Be-Ya-fP7">
+                    <rect key="frame" x="0.0" y="320" width="476" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下次继续努力呀" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hnh-wu-tla">
+                    <rect key="frame" x="202" y="334" width="72" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7h-hF-XoO">
+                    <rect key="frame" x="398" y="24" width="38" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="noQ-eh-FxD"/>
+                        <constraint firstAttribute="width" constant="38" id="tIZ-2o-h1j"/>
+                    </constraints>
+                    <state key="normal" image="closeBtn"/>
+                    <connections>
+                        <action selector="closeButtonClick:" destination="OVY-wd-gZv" eventType="touchUpInside" id="cM9-s7-31M"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gad-OH-EPh">
+                    <rect key="frame" x="165" y="430" width="146" height="33"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="去我的宝箱" backgroundImage="timeT">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vt8-xl-q0A">
+                    <rect key="frame" x="165" y="387" width="146" height="33"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="召唤外援" backgroundImage="timeT">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Gad-OH-EPh" firstAttribute="top" secondItem="Vt8-xl-q0A" secondAttribute="bottom" constant="10" id="3YR-K6-mEr"/>
+                <constraint firstAttribute="trailing" secondItem="Fsy-sC-VIP" secondAttribute="trailing" id="Cwx-yb-F0f"/>
+                <constraint firstAttribute="bottom" secondItem="Fsy-sC-VIP" secondAttribute="bottom" id="EjD-RO-eJA"/>
+                <constraint firstItem="Hnh-wu-tla" firstAttribute="top" secondItem="5Be-Ya-fP7" secondAttribute="bottom" constant="2" id="Fht-Y7-rej"/>
+                <constraint firstItem="Vt8-xl-q0A" firstAttribute="centerX" secondItem="hB8-iG-rnh" secondAttribute="centerX" id="I4y-1N-2IU"/>
+                <constraint firstItem="5Be-Ya-fP7" firstAttribute="leading" secondItem="OVY-wd-gZv" secondAttribute="leading" id="K2Q-gj-JcU"/>
+                <constraint firstAttribute="trailing" secondItem="5Be-Ya-fP7" secondAttribute="trailing" id="M3u-5G-rBO"/>
+                <constraint firstItem="Gad-OH-EPh" firstAttribute="centerX" secondItem="Vt8-xl-q0A" secondAttribute="centerX" id="P21-FT-z0o"/>
+                <constraint firstItem="Fsy-sC-VIP" firstAttribute="leading" secondItem="OVY-wd-gZv" secondAttribute="leading" id="Txn-ex-tcH"/>
+                <constraint firstItem="jpP-3f-p80" firstAttribute="top" secondItem="Hnh-wu-tla" secondAttribute="bottom" constant="5" id="XLc-pb-0Ut"/>
+                <constraint firstItem="Hnh-wu-tla" firstAttribute="centerX" secondItem="5Be-Ya-fP7" secondAttribute="centerX" id="Z5x-OZ-IWB"/>
+                <constraint firstItem="jpP-3f-p80" firstAttribute="centerX" secondItem="Hnh-wu-tla" secondAttribute="centerX" id="Zc8-nN-da4"/>
+                <constraint firstItem="hB8-iG-rnh" firstAttribute="centerX" secondItem="Fsy-sC-VIP" secondAttribute="centerX" id="bR2-pd-XWz"/>
+                <constraint firstItem="hB8-iG-rnh" firstAttribute="top" secondItem="OVY-wd-gZv" secondAttribute="top" constant="60" id="egb-3M-gj0"/>
+                <constraint firstItem="hgb-a8-G7S" firstAttribute="top" secondItem="jpP-3f-p80" secondAttribute="bottom" constant="2" id="eh8-LE-QT3"/>
+                <constraint firstAttribute="trailing" secondItem="F7h-hF-XoO" secondAttribute="trailing" constant="40" id="kd1-GZ-r3o"/>
+                <constraint firstItem="5Be-Ya-fP7" firstAttribute="bottom" secondItem="hB8-iG-rnh" secondAttribute="bottom" id="pj8-R7-uBc"/>
+                <constraint firstItem="Vt8-xl-q0A" firstAttribute="top" secondItem="hgb-a8-G7S" secondAttribute="bottom" constant="10" id="qJ5-Wa-80W"/>
+                <constraint firstItem="Fsy-sC-VIP" firstAttribute="top" secondItem="OVY-wd-gZv" secondAttribute="top" id="qs6-uv-Pwi"/>
+                <constraint firstItem="F7h-hF-XoO" firstAttribute="top" secondItem="OVY-wd-gZv" secondAttribute="top" constant="24" id="sBm-zn-76f"/>
+                <constraint firstItem="hgb-a8-G7S" firstAttribute="centerX" secondItem="jpP-3f-p80" secondAttribute="centerX" id="sCj-Mx-r3T"/>
+                <constraint firstItem="5Be-Ya-fP7" firstAttribute="centerX" secondItem="hB8-iG-rnh" secondAttribute="centerX" id="tFf-lr-3Ld"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="deleteButton" destination="F7h-hF-XoO" id="Svi-hq-cGD"/>
+                <outlet property="goMyBX" destination="Gad-OH-EPh" id="8Ay-Zs-QUw"/>
+                <outlet property="shareButton" destination="Vt8-xl-q0A" id="0Zx-hx-KqC"/>
+            </connections>
+            <point key="canvasLocation" x="112" y="-84.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="closeBtn" width="22" height="22"/>
+        <image name="failImage" width="414" height="451"/>
+        <image name="floatingLayer" width="320" height="568"/>
+        <image name="timeT" width="146" height="33"/>
+    </resources>
+</document>

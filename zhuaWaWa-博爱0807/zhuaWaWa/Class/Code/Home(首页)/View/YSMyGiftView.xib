@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="yq4-qO-hXF" customClass="YSMyGiftView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="floatingLayer" translatesAutoresizingMaskIntoConstraints="NO" id="NCi-Jp-uwl">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iae-ce-jYX">
+                    <rect key="frame" x="0.0" y="169" width="375" height="180"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Zdl-Hw-ReX">
+                            <rect key="frame" x="15" y="15" width="345" height="150"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7Cx-3R-jrT">
+                                <size key="itemSize" width="100" height="150"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="yq4-qO-hXF" id="nNU-Ix-elo"/>
+                                <outlet property="delegate" destination="NCi-Jp-uwl" id="pKg-JN-zwk"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Zdl-Hw-ReX" secondAttribute="bottom" constant="15" id="6r8-SJ-Xwq"/>
+                        <constraint firstAttribute="trailing" secondItem="Zdl-Hw-ReX" secondAttribute="trailing" constant="15" id="mhd-Sp-MgP"/>
+                        <constraint firstAttribute="height" constant="180" id="o0r-7r-kw9"/>
+                        <constraint firstItem="Zdl-Hw-ReX" firstAttribute="leading" secondItem="Iae-ce-jYX" secondAttribute="leading" constant="15" id="uF6-ey-Msx"/>
+                        <constraint firstItem="Zdl-Hw-ReX" firstAttribute="top" secondItem="Iae-ce-jYX" secondAttribute="top" constant="15" id="yWt-j8-Fro"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="io7-n1-jKv">
+                    <rect key="frame" x="298" y="49" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="498-Ss-hl7"/>
+                        <constraint firstAttribute="height" constant="40" id="W3B-xz-I7T"/>
+                    </constraints>
+                    <state key="normal" image="closeBtn"/>
+                    <connections>
+                        <action selector="closeButton:" destination="yq4-qO-hXF" eventType="touchUpInside" id="wAj-eu-3md"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Iae-ce-jYX" secondAttribute="trailing" id="8FC-5q-hND"/>
+                <constraint firstItem="io7-n1-jKv" firstAttribute="top" secondItem="yq4-qO-hXF" secondAttribute="top" constant="49" id="GrJ-7w-aRY"/>
+                <constraint firstAttribute="trailing" secondItem="io7-n1-jKv" secondAttribute="trailing" constant="37" id="HlP-GW-wYv"/>
+                <constraint firstItem="Iae-ce-jYX" firstAttribute="top" secondItem="io7-n1-jKv" secondAttribute="bottom" constant="80" id="IAA-GY-SmI"/>
+                <constraint firstItem="NCi-Jp-uwl" firstAttribute="top" secondItem="yq4-qO-hXF" secondAttribute="top" id="IAi-NH-eQR"/>
+                <constraint firstAttribute="trailing" secondItem="NCi-Jp-uwl" secondAttribute="trailing" id="XTT-HU-rkO"/>
+                <constraint firstItem="Iae-ce-jYX" firstAttribute="leading" secondItem="yq4-qO-hXF" secondAttribute="leading" id="aKx-A2-G5c"/>
+                <constraint firstAttribute="bottom" secondItem="NCi-Jp-uwl" secondAttribute="bottom" id="i1Y-3W-xwr"/>
+                <constraint firstItem="NCi-Jp-uwl" firstAttribute="leading" secondItem="yq4-qO-hXF" secondAttribute="leading" id="zQi-C2-Xdn"/>
+            </constraints>
+            <connections>
+                <outlet property="closeButton" destination="io7-n1-jKv" id="f3M-Va-oYp"/>
+                <outlet property="giftView" destination="Zdl-Hw-ReX" id="Ozr-tf-5Bf"/>
+            </connections>
+            <point key="canvasLocation" x="-138" y="-152"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="closeBtn" width="22" height="22"/>
+        <image name="floatingLayer" width="320" height="568"/>
+    </resources>
+</document>

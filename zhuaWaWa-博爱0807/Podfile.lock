@@ -1,0 +1,160 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - BAAlert (1.2.2)
+  - BAAlertController (1.0.2)
+  - BAButton (2.5.8)
+  - BAGridView (1.0.6):
+    - SDWebImage
+  - BANetManager (2.3.3):
+    - AFNetworking
+    - YYCache
+  - BATextField (1.0.2)
+  - BATextView (1.0.1)
+  - BATouchID (1.0.1)
+  - BAWKWebView (1.0.7)
+  - DZNEmptyDataSet (1.8.1)
+  - FBRetainCycleDetector (0.1.3)
+  - HappyDNS (0.3.10)
+  - IQKeyboardManager (4.0.11)
+  - LBXAlertAction (1.0.3)
+  - MBProgressHUD (1.0.0)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.12)
+  - MLeaksFinder (0.2.1):
+    - FBRetainCycleDetector
+  - NullSafe (1.2.2)
+  - SDAutoLayout (2.2.0)
+  - SDCycleScrollView (1.73):
+    - SDWebImage (~> 4.0.0)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - UMengAnalytics-NO-IDFA (4.2.5)
+  - UMengUShare/Core (6.4.5):
+    - UMengUShare/Network
+  - UMengUShare/Network (6.4.5)
+  - UMengUShare/Social/AlipayShare (6.4.5):
+    - UMengUShare/Core
+  - UMengUShare/Social/QQ (6.4.5):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedQQ
+  - UMengUShare/Social/ReducedQQ (6.4.5):
+    - UMengUShare/Core
+  - UMengUShare/Social/ReducedSina (6.4.5):
+    - UMengUShare/Core
+  - UMengUShare/Social/ReducedWeChat (6.4.5):
+    - UMengUShare/Core
+  - UMengUShare/Social/Sina (6.4.5):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedSina
+  - UMengUShare/Social/WeChat (6.4.5):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedWeChat
+  - UMengUShare/UI (6.4.5):
+    - UMengUShare/Core
+  - YYCache (1.0.4)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYModel (1.0.4)
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
+  - ZYCornerRadius (0.8.1)
+
+DEPENDENCIES:
+  - BAAlert
+  - BAAlertController
+  - BAButton
+  - BAGridView
+  - BANetManager
+  - BATextField
+  - BATextView
+  - BATouchID
+  - BAWKWebView
+  - DZNEmptyDataSet
+  - HappyDNS
+  - IQKeyboardManager
+  - LBXAlertAction
+  - MBProgressHUD
+  - MJExtension
+  - MJRefresh
+  - MLeaksFinder
+  - NullSafe
+  - SDAutoLayout
+  - SDCycleScrollView
+  - UMengAnalytics-NO-IDFA
+  - UMengUShare/Social/AlipayShare
+  - UMengUShare/Social/QQ
+  - UMengUShare/Social/Sina
+  - UMengUShare/Social/WeChat
+  - UMengUShare/UI
+  - YYCategories
+  - YYImage
+  - YYModel
+  - YYWebImage
+  - ZYCornerRadius (from `https://github.com/liuzhiyi1992/ZYCornerRadius.git`, tag `0.9.1`)
+
+EXTERNAL SOURCES:
+  ZYCornerRadius:
+    :git: https://github.com/liuzhiyi1992/ZYCornerRadius.git
+    :tag: 0.9.1
+
+CHECKOUT OPTIONS:
+  ZYCornerRadius:
+    :git: https://github.com/liuzhiyi1992/ZYCornerRadius.git
+    :tag: 0.9.1
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BAAlert: 847e92542eb72c57a93c6b899a0af7b6200dda71
+  BAAlertController: d503d871e33082e6b8c21fbdbf803bf0a8aba64b
+  BAButton: d0f3a2deca0c7cf8ac06174420ec4fe973813195
+  BAGridView: 628a18a6e798385973e5b393f1c2d7c646d669e8
+  BANetManager: 4bd9ef7fd422ded726910731e967f20eb881a416
+  BATextField: 26270f6b8f80aff55bba425e3290bc8b0b9aa72f
+  BATextView: 0514fcbc994a7abafc0a3addb35596fe56c1910c
+  BATouchID: 33732f62f7d656733a3208c94744c61806095d3c
+  BAWKWebView: fbb6c033fb79963ca6c00a3ea186a30ff35c301e
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FBRetainCycleDetector: f0c7b290bf48ae77f6ae060843ce34ae341781eb
+  HappyDNS: 06a9fed2796663fd87626dbf02552933265bf059
+  IQKeyboardManager: 83eae5318483a34eb2069ef413d195b97605232e
+  LBXAlertAction: e904f511f0e44fde323e056691d7a8a99d71faba
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  MLeaksFinder: 0850e2f2abc7227adc4d4e2d1992b431264eb4d5
+  NullSafe: cbf1f77a24558e49bc76e2673f31250d3087c792
+  SDAutoLayout: c5509e77ae75735d9a39f7bc83dba6d3f75d49d8
+  SDCycleScrollView: d0fd5fe40a80918371fd8939214eb3be81033d83
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
+  UMengUShare: a5711c54e640b04e3048e931d2b88d50f9cfa55c
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
+  ZYCornerRadius: 485a8e9304d16d1620641054a08b9c0f55dd512c
+
+PODFILE CHECKSUM: ff0ab6ab30f047eeaa74a43221bd2ac64495cc08
+
+COCOAPODS: 1.2.1

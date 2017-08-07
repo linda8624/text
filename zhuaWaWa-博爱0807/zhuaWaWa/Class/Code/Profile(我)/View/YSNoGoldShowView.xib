@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Lla-VG-Dgi" customClass="YSNoGoldShowView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellowBtnBj" translatesAutoresizingMaskIntoConstraints="NO" id="6cw-jf-gOe">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的G币余额不足,不够邮费" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOf-N5-CHz">
+                    <rect key="frame" x="0.0" y="30" width="320" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开启充值宝箱可以获得一张[免费邮寄劵]哦~" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkU-Ph-uEn">
+                    <rect key="frame" x="0.0" y="52" width="320" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7n-y3-w6Q">
+                    <rect key="frame" x="102.5" y="100" width="115" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="pbZ-Ue-Xz3"/>
+                        <constraint firstAttribute="width" constant="115" id="rHJ-I3-GR7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="去开宝箱" backgroundImage="redBtn1">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="goMyBoxClick:" destination="Lla-VG-Dgi" eventType="touchUpInside" id="7PL-nP-bqQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6cw-jf-gOe" secondAttribute="trailing" id="1cx-lH-Z2Z"/>
+                <constraint firstItem="r7n-y3-w6Q" firstAttribute="centerX" secondItem="fkU-Ph-uEn" secondAttribute="centerX" id="9hK-gr-iHq"/>
+                <constraint firstItem="fkU-Ph-uEn" firstAttribute="leading" secondItem="Lla-VG-Dgi" secondAttribute="leading" id="Ae9-Rl-OlI"/>
+                <constraint firstItem="sOf-N5-CHz" firstAttribute="top" secondItem="Lla-VG-Dgi" secondAttribute="top" constant="30" id="C5Z-Ah-4ko"/>
+                <constraint firstAttribute="trailing" secondItem="fkU-Ph-uEn" secondAttribute="trailing" id="OMk-8Y-U7G"/>
+                <constraint firstItem="6cw-jf-gOe" firstAttribute="top" secondItem="Lla-VG-Dgi" secondAttribute="top" id="PD1-Vo-m67"/>
+                <constraint firstItem="sOf-N5-CHz" firstAttribute="leading" secondItem="Lla-VG-Dgi" secondAttribute="leading" id="jHh-Xs-fLu"/>
+                <constraint firstItem="fkU-Ph-uEn" firstAttribute="top" secondItem="sOf-N5-CHz" secondAttribute="bottom" constant="5" id="nQn-Ny-TAX"/>
+                <constraint firstAttribute="bottom" secondItem="r7n-y3-w6Q" secondAttribute="bottom" constant="25" id="pVi-uA-IIm"/>
+                <constraint firstAttribute="bottom" secondItem="6cw-jf-gOe" secondAttribute="bottom" id="q7M-ga-MCZ"/>
+                <constraint firstAttribute="trailing" secondItem="sOf-N5-CHz" secondAttribute="trailing" id="rXZ-vO-Lfr"/>
+                <constraint firstItem="6cw-jf-gOe" firstAttribute="leading" secondItem="Lla-VG-Dgi" secondAttribute="leading" id="tQZ-cW-BF1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="91" y="17"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="redBtn1" width="113" height="25"/>
+        <image name="yellowBtnBj" width="321" height="146"/>
+    </resources>
+</document>

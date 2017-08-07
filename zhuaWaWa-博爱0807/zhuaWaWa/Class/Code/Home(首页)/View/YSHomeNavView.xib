@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="H7C-kC-9rP" customClass="YSHomeNavView">
+            <rect key="frame" x="0.0" y="0.0" width="521" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headImage" translatesAutoresizingMaskIntoConstraints="NO" id="s3q-6c-BsZ">
+                    <rect key="frame" x="0.0" y="0.0" width="521" height="44"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d00-wc-wW5">
+                    <rect key="frame" x="10" y="9.5" width="26" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="9yq-Th-wmP"/>
+                        <constraint firstAttribute="width" constant="26" id="B44-jn-vsz"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="collectImage"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJT-Jz-NRL">
+                    <rect key="frame" x="46" y="6" width="67" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="67" id="7RA-GI-AgA"/>
+                        <constraint firstAttribute="height" constant="32" id="JzI-xA-OIy"/>
+                    </constraints>
+                    <state key="normal" title="全部" backgroundImage="allImage"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TT5-QW-BTk">
+                    <rect key="frame" x="475" y="9" width="26" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="26" id="bTj-hG-hDj"/>
+                        <constraint firstAttribute="height" constant="25" id="ilH-Zv-9PC"/>
+                    </constraints>
+                    <state key="normal" image="topSroc"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="d00-wc-wW5" firstAttribute="leading" secondItem="H7C-kC-9rP" secondAttribute="leading" constant="10" id="9v7-NQ-lxG"/>
+                <constraint firstAttribute="bottom" secondItem="s3q-6c-BsZ" secondAttribute="bottom" id="Dwz-F6-r2y"/>
+                <constraint firstItem="s3q-6c-BsZ" firstAttribute="top" secondItem="H7C-kC-9rP" secondAttribute="top" id="ECb-13-B8l"/>
+                <constraint firstItem="s3q-6c-BsZ" firstAttribute="leading" secondItem="H7C-kC-9rP" secondAttribute="leading" id="MRt-AN-jHs"/>
+                <constraint firstItem="TT5-QW-BTk" firstAttribute="centerY" secondItem="s3q-6c-BsZ" secondAttribute="centerY" id="SES-gb-9mT"/>
+                <constraint firstItem="PJT-Jz-NRL" firstAttribute="centerY" secondItem="s3q-6c-BsZ" secondAttribute="centerY" id="Wkp-KE-c0X"/>
+                <constraint firstAttribute="trailing" secondItem="s3q-6c-BsZ" secondAttribute="trailing" id="juT-xz-3jb"/>
+                <constraint firstItem="d00-wc-wW5" firstAttribute="centerY" secondItem="s3q-6c-BsZ" secondAttribute="centerY" id="nXY-V3-wuN"/>
+                <constraint firstAttribute="trailing" secondItem="TT5-QW-BTk" secondAttribute="trailing" constant="20" id="wtG-Pz-j2z"/>
+                <constraint firstItem="PJT-Jz-NRL" firstAttribute="leading" secondItem="d00-wc-wW5" secondAttribute="trailing" constant="10" id="zmJ-Bk-Wd9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-47.5" y="-6.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="allImage" width="67" height="32"/>
+        <image name="collectImage" width="26" height="25"/>
+        <image name="headImage" width="360" height="43"/>
+        <image name="topSroc" width="14" height="22"/>
+    </resources>
+</document>

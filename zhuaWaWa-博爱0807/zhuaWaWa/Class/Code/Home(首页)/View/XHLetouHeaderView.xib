@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XHLetouHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="141"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beijngT" highlightedImage="beijngT" translatesAutoresizingMaskIntoConstraints="NO" id="Lmm-eA-39b">
+                    <rect key="frame" x="0.0" y="0.0" width="355" height="141"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="direction" translatesAutoresizingMaskIntoConstraints="NO" id="45O-Gg-fCh">
+                    <rect key="frame" x="31" y="15.5" width="105" height="110"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="5zg-DJ-B2h"/>
+                        <constraint firstAttribute="width" constant="105" id="S4N-NQ-9GD"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcK-0h-E1K" userLabel="btnTop">
+                    <rect key="frame" x="68" y="15.5" width="30" height="30"/>
+                    <connections>
+                        <action selector="buttonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Cad-WX-wXA"/>
+                        <action selector="touchDownClick:" destination="iN0-l3-epB" eventType="touchDown" id="Bzr-wl-eDa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYY-rf-vif" userLabel="btnBottom">
+                    <rect key="frame" x="68.5" y="95.5" width="30" height="30"/>
+                    <connections>
+                        <action selector="buttonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="W2J-c5-gmy"/>
+                        <action selector="touchDownClick:" destination="iN0-l3-epB" eventType="touchDown" id="vgd-6X-STo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ra-LS-4hH" userLabel="btnLeft">
+                    <rect key="frame" x="31" y="55.5" width="30" height="30"/>
+                    <connections>
+                        <action selector="buttonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="L1p-dN-6PI"/>
+                        <action selector="touchDownClick:" destination="iN0-l3-epB" eventType="touchDown" id="sWl-9q-3vQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8D-Uh-69n" userLabel="btnR">
+                    <rect key="frame" x="106" y="55" width="30" height="30"/>
+                    <connections>
+                        <action selector="buttonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Jdr-Dq-0ek"/>
+                        <action selector="touchDownClick:" destination="iN0-l3-epB" eventType="touchDown" id="cON-sp-VI6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ueo-4A-7eJ">
+                    <rect key="frame" x="190" y="26.5" width="88" height="88"/>
+                    <state key="normal" image="gameG"/>
+                    <connections>
+                        <action selector="gameButtonClick:" destination="iN0-l3-epB" eventType="touchDown" id="I9h-3u-fXb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5g-MO-KzK">
+                    <rect key="frame" x="288" y="42" width="57" height="57"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="57" id="iZi-Vt-cVK"/>
+                        <constraint firstAttribute="height" constant="57" id="pnW-15-8bz"/>
+                    </constraints>
+                    <state key="normal" image="switchA1"/>
+                    <connections>
+                        <action selector="phoneImageClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="k0H-pb-HtZ"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="floatingLayer" translatesAutoresizingMaskIntoConstraints="NO" id="g6v-ji-ckm">
+                    <rect key="frame" x="0.0" y="0.0" width="355" height="141"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="s5g-MO-KzK" firstAttribute="centerY" secondItem="45O-Gg-fCh" secondAttribute="centerY" id="45h-hx-Iz2"/>
+                <constraint firstItem="e8D-Uh-69n" firstAttribute="centerY" secondItem="45O-Gg-fCh" secondAttribute="centerY" id="7mY-n5-ql2"/>
+                <constraint firstItem="RcK-0h-E1K" firstAttribute="centerX" secondItem="45O-Gg-fCh" secondAttribute="centerX" id="8jj-i2-feg"/>
+                <constraint firstItem="7ra-LS-4hH" firstAttribute="leading" secondItem="45O-Gg-fCh" secondAttribute="leading" id="9pZ-IQ-Yqe"/>
+                <constraint firstItem="NYY-rf-vif" firstAttribute="bottom" secondItem="45O-Gg-fCh" secondAttribute="bottom" id="E88-Ng-2EL"/>
+                <constraint firstItem="e8D-Uh-69n" firstAttribute="trailing" secondItem="45O-Gg-fCh" secondAttribute="trailing" id="Gp2-SU-fih"/>
+                <constraint firstItem="g6v-ji-ckm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MFw-jX-16Q"/>
+                <constraint firstAttribute="trailing" secondItem="Lmm-eA-39b" secondAttribute="trailing" id="Txz-S6-24q"/>
+                <constraint firstAttribute="bottom" secondItem="g6v-ji-ckm" secondAttribute="bottom" id="Wjz-6R-Efp"/>
+                <constraint firstItem="NYY-rf-vif" firstAttribute="centerX" secondItem="45O-Gg-fCh" secondAttribute="centerX" id="ZSR-HY-GIn"/>
+                <constraint firstAttribute="trailing" secondItem="g6v-ji-ckm" secondAttribute="trailing" id="bun-ab-t4w"/>
+                <constraint firstItem="s5g-MO-KzK" firstAttribute="leading" secondItem="Ueo-4A-7eJ" secondAttribute="trailing" constant="10" id="eKI-xZ-ff2"/>
+                <constraint firstItem="Lmm-eA-39b" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eqA-Vg-V8o"/>
+                <constraint firstItem="45O-Gg-fCh" firstAttribute="centerY" secondItem="Lmm-eA-39b" secondAttribute="centerY" id="fOh-8f-3TM"/>
+                <constraint firstAttribute="bottom" secondItem="Lmm-eA-39b" secondAttribute="bottom" id="h5K-sR-hzu"/>
+                <constraint firstItem="7ra-LS-4hH" firstAttribute="centerY" secondItem="45O-Gg-fCh" secondAttribute="centerY" id="lqZ-fc-GGx"/>
+                <constraint firstItem="45O-Gg-fCh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="31" id="oJi-2G-W5R"/>
+                <constraint firstItem="Lmm-eA-39b" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qv4-hv-nFP"/>
+                <constraint firstAttribute="trailing" secondItem="s5g-MO-KzK" secondAttribute="trailing" constant="10" id="r8w-pH-7zW"/>
+                <constraint firstItem="Ueo-4A-7eJ" firstAttribute="centerY" secondItem="s5g-MO-KzK" secondAttribute="centerY" id="tIy-SG-Ej6"/>
+                <constraint firstItem="g6v-ji-ckm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wOh-mP-GQN"/>
+                <constraint firstItem="RcK-0h-E1K" firstAttribute="top" secondItem="45O-Gg-fCh" secondAttribute="top" id="zhP-j5-phP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="buttonImage" destination="45O-Gg-fCh" id="FgG-mB-CFa"/>
+                <outlet property="gameImage" destination="Ueo-4A-7eJ" id="01I-a1-MBK"/>
+                <outlet property="phoneImage" destination="s5g-MO-KzK" id="w1f-SZ-cLV"/>
+                <outlet property="unEnableButton" destination="g6v-ji-ckm" id="Hig-oB-pXE"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="119.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="beijngT" width="360" height="131"/>
+        <image name="direction" width="139" height="139"/>
+        <image name="floatingLayer" width="320" height="568"/>
+        <image name="gameG" width="88" height="88"/>
+        <image name="switchA1" width="71" height="47"/>
+    </resources>
+</document>
