@@ -6,9 +6,9 @@
 //  Copyright © 2017年 博爱之家. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BABaseViewController.h"
 
-@interface PLPlayerViewController : UIViewController
+@interface PLPlayerViewController : BABaseViewController
 /*机器唯一标识ID*/
 @property (nonatomic, strong) NSString *jid;
 @end

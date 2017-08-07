@@ -3840,7 +3840,7 @@
 				TargetAttributes = {
 					C4ADE7611F2AC89900F83F72 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = JB3QR65942;
+						DevelopmentTeam = KH52VC5M68;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -4531,7 +4531,7 @@
 			baseConfigurationReference = AFC77354A82D35B8ABD10FCC /* Pods-zhuaWaWa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JB3QR65942;
+				DEVELOPMENT_TEAM = KH52VC5M68;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4584,8 +4584,9 @@
 					"$(PROJECT_DIR)/zhuaWaWa/Class/GZPay/AliPay",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhuawawa.YSKJ;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcspark.SparklotteryOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -4594,7 +4595,7 @@
 			baseConfigurationReference = E4914DA134D62075ACCF3627 /* Pods-zhuaWaWa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JB3QR65942;
+				DEVELOPMENT_TEAM = KH52VC5M68;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4647,8 +4648,9 @@
 					"$(PROJECT_DIR)/zhuaWaWa/Class/GZPay/AliPay",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhuawawa.YSKJ;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcspark.SparklotteryOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

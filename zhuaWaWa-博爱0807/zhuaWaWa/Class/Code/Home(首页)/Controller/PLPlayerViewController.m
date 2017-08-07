@@ -71,9 +71,11 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+}
+- (void)ba_base_setupUI{
     
     [self initMySubViews];
-
+    
     [self loadRoomGameInfo];
 }
 // 只调用一次

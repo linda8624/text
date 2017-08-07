@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "zhuaWaWa/Class/Code/Profile(&#x6211;)/Controller/YSMyBoxTableViewController.m"
-            timestampString = "523602462.309265"
+            timestampString = "523769520.419703"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "149"
-            endingLineNumber = "149"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
             landmarkName = "-getDataWithHead:"
             landmarkType = "7">
          </BreakpointContent>
@@ -41,13 +41,13 @@
                   symbolName = "-[DemoVC10Cell imageView]"
                   moduleName = "zhuaWaWa"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lijunxia/Desktop/zhuaWaWa-%E5%8D%9A%E7%88%B10729/zhuaWaWa/Class/Code/Home(%E9%A6%96%E9%A1%B5)/View/DemoVC10Cell.m"
-                  timestampString = "523727105.62715"
+                  urlString = "file:///Users/lijunxia/text/zhuaWaWa-%E5%8D%9A%E7%88%B10807/zhuaWaWa/Class/Code/Home(%E9%A6%96%E9%A1%B5)/View/DemoVC10Cell.m"
+                  timestampString = "523769310.332768"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "12"
                   endingLineNumber = "12"
-                  offsetFromSymbolStart = "16">
+                  offsetFromSymbolStart = "20">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -56,13 +56,13 @@
                   symbolName = "-[DemoVC10Cell setImageView:]"
                   moduleName = "zhuaWaWa"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lijunxia/Desktop/zhuaWaWa-%E5%8D%9A%E7%88%B10729/zhuaWaWa/Class/Code/Home(%E9%A6%96%E9%A1%B5)/View/DemoVC10Cell.m"
-                  timestampString = "523727105.629728"
+                  urlString = "file:///Users/lijunxia/text/zhuaWaWa-%E5%8D%9A%E7%88%B10807/zhuaWaWa/Class/Code/Home(%E9%A6%96%E9%A1%B5)/View/DemoVC10Cell.m"
+                  timestampString = "523769310.334476"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "12"
                   endingLineNumber = "12"
-                  offsetFromSymbolStart = "49">
+                  offsetFromSymbolStart = "64">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -81,22 +81,6 @@
             endingLineNumber = "17"
             landmarkName = "@interface DemoVC10Cell()"
             landmarkType = "2">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "zhuaWaWa/Class/Code/Login(&#x767b;&#x9646;)/ViewController/BALoginViewController.m"
-            timestampString = "523532368.363401"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "-yanzhengmClick:"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -153,13 +137,13 @@
                   symbolName = "-[BAHomeCollectionView loadChargelist]"
                   moduleName = "zhuaWaWa"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lijunxia/Desktop/zhuaWaWa-%E5%8D%9A%E7%88%B10729/zhuaWaWa/Class/Code/Home(%E9%A6%96%E9%A1%B5)/View/BAHomeCollectionView.m"
-                  timestampString = "523727105.650216"
+                  urlString = "file:///Users/lijunxia/text/zhuaWaWa-%E5%8D%9A%E7%88%B10807/zhuaWaWa/Class/Code/Home(%E9%A6%96%E9%A1%B5)/View/BAHomeCollectionView.m"
+                  timestampString = "523769310.364657"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "49"
                   endingLineNumber = "49"
-                  offsetFromSymbolStart = "621">
+                  offsetFromSymbolStart = "652">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -168,13 +152,13 @@
                   symbolName = "__38-[BAHomeCollectionView loadChargelist]_block_invoke"
                   moduleName = "zhuaWaWa"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lijunxia/Desktop/zhuaWaWa-%E5%8D%9A%E7%88%B10729/zhuaWaWa/Class/Code/Home(%E9%A6%96%E9%A1%B5)/View/BAHomeCollectionView.m"
-                  timestampString = "523727105.652315"
+                  urlString = "file:///Users/lijunxia/text/zhuaWaWa-%E5%8D%9A%E7%88%B10807/zhuaWaWa/Class/Code/Home(%E9%A6%96%E9%A1%B5)/View/BAHomeCollectionView.m"
+                  timestampString = "523769310.366207"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "50"
                   endingLineNumber = "50"
-                  offsetFromSymbolStart = "51">
+                  offsetFromSymbolStart = "64">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -192,6 +176,86 @@
             startingLineNumber = "51"
             endingLineNumber = "51"
             landmarkName = "-loadChargelist"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "zhuaWaWa/Class/Code/Login(&#x767b;&#x9646;)/ViewController/BALoginViewController.m"
+            timestampString = "523769220.724646"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "-yanzhengmClick:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "zhuaWaWa/Class/Code/Login(&#x767b;&#x9646;)/ViewController/BALoginViewController.m"
+            timestampString = "523769282.389032"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "-yanzhengmClick:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[BALoginViewController yanzhengmClick:]"
+                  moduleName = "zhuaWaWa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lijunxia/text/zhuaWaWa-%E5%8D%9A%E7%88%B10807/zhuaWaWa/Class/Code/Login(%E7%99%BB%E9%99%86)/ViewController/BALoginViewController.m"
+                  timestampString = "523769310.376231"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "976">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__40-[BALoginViewController yanzhengmClick:]_block_invoke.93"
+                  moduleName = "zhuaWaWa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lijunxia/text/zhuaWaWa-%E5%8D%9A%E7%88%B10807/zhuaWaWa/Class/Code/Login(%E7%99%BB%E9%99%86)/ViewController/BALoginViewController.m"
+                  timestampString = "523769310.378224"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "zhuaWaWa/Class/Tools/BANetManager(&#x7f51;&#x7edc;&#x7c7b;)/BANewsNetManager.m"
+            timestampString = "523769324.401413"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "+getStatusWithURL:withPostText:success:failure:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
