@@ -108,7 +108,7 @@
             [self initRoomStatusWithModel:model];
             
             // 房间状态定时器
-            [self createQueryRoomStatusTimer];
+            //[self createQueryRoomStatusTimer];
         }
     } failure:^(NSError *error) {
     }];
@@ -131,7 +131,7 @@
                                  @"jid":self.jid,
                                  @"M0":@"IMMC",
                                  @"M9":timeString};
-    NSString *postUrl = [NSString stringWithFormat:@"%@%@",@"http://api1.wawazhua.com/jvvserver/",URL_QueryRoomStatus];
+    NSString *postUrl = [NSString stringWithFormat:@"%@%@",[YSAccountTool account].server,URL_QueryRoomStatus];
     
     BALog(@"queryRoomStatus%@",self.model.curGamerAuid);
      BA_WEAKSELF;
@@ -322,7 +322,7 @@
                                  @"isBaji":isBaji,
                                  @"M0":@"IMMC",
                                  @"M9":timeString};
-    NSString *postUrl = [NSString stringWithFormat:@"%@%@",@"http://api1.wawazhua.com/jvvserver/",URL_GameStart];
+    NSString *postUrl = [NSString stringWithFormat:@"%@%@",[YSAccountTool account].server,URL_GameStart];
     [BANewsNetManager getStatusWithURL:postUrl withPostText:parameters success:^(id response) {
         NSNumber *code = response[@"code"];
         if ([code isEqualToNumber:@1]){

@@ -81,7 +81,6 @@
 
 - (void)ba_base_viewWillAppear
 {
-    self.collectionView.hidden = NO;
 }
 
 - (void)viewDidLoad {

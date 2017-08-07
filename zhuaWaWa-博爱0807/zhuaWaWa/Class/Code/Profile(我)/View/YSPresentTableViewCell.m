@@ -35,7 +35,7 @@
 }
 
 - (IBAction)shareButtonClick:(id)sender{
-    if ([self.delegate respondsToSelector:@selector(shareButtonClick:)]) {
+    if ([self.delegate respondsToSelector:@selector(shareBtnClick:)]) {
         [self.delegate shareBtnClick:self.giftModel];
     }
 }

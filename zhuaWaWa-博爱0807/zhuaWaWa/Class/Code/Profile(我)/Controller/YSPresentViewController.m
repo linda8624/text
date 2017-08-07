@@ -181,6 +181,19 @@
 - (void)shareBtnClick:(YSMyGiftModel *)giftModel
 {
     BALog(@"点击了分享按钮");
+    // 点击了分享到朋友圈
+    NSString *str =  [NSString stringWithFormat:@"http://www.88meichou.com/share.php?id=%@",@"836"];
+    NSString *shareText = [NSString stringWithFormat:@"%@ 我为自己代言",@"linda"];
+    NSString  *ShareTitle = [NSString stringWithFormat:@"%@,%@",@"linda",@"友盟分享功能实现"];
+    NSString *urlSrt = [NSString stringWithFormat:@"%@",str];
+    
+    BASHAREMANAGER.shareTitle = ShareTitle ;
+    BASHAREMANAGER.shareText = shareText ;
+    BASHAREMANAGER.shareImageUrl = @"http://tupian.enterdesk.com/2012/0606/gha/10/11285966_1334673509285.jpg" ;
+    BASHAREMANAGER.shareWebpageUrl = urlSrt ;
+    
+    [BASHAREMANAGER ba_wechatTimeLineShareWithShareType:BAUM_SHARE_TYPE_WEB_LINK viewController:self];
+    
 }
 #pragma mark - UITableView Delegate / UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
